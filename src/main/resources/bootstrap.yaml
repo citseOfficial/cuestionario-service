@@ -4,14 +4,14 @@ spring:
   cloud:
     config:
       enabled: true
-      uri: http://localhost:8081
+      uri: http://20.197.181.20:8081
   jpa:
     hibernate:
       ddl-auto: none
 
   datasource:
-    url: jdbc:mysql://localhost:3306/bdo_cuestionario
-    username: CITSE
-    password: 123456
+    url: jdbc:mysql://citse.mysql.database.azure.com:3306/bdo_cuestionario
+    username: citse@citse
+    password: $deployment@upeu7
     driver-class-name: com.mysql.cj.jdbc.Driver
 
